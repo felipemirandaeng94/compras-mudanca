@@ -63,7 +63,8 @@ main{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;o
 
 /* cards */
 .list{padding:0 12px;display:flex;flex-direction:column;gap:8px}
-.swipe{position:relative;border-radius:14px;overflow:hidden;background:var(--green)}
+.swipe{position:relative;border-radius:14px;overflow:hidden;background:transparent}
+.swipe[data-dir="left"]{background:var(--green)}
 .swipe[data-dir="right"]{background:var(--red)}
 .swipe .under{position:absolute;inset:0;display:none;align-items:center;padding:0 18px;color:#fff;font-size:13px;font-weight:600;gap:6px}
 .swipe[data-dir="left"] .under.l{display:flex;justify-content:flex-end}
