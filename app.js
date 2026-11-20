@@ -195,7 +195,7 @@ function construirLista() {
         h("button", { type: "button", class: "iconbtn", "aria-label": "Buscar", onclick: () => { S.searchOpen = true; update(); busca.focus(); } }, h("span", { class: "in" }, icon("search", "sm")))),
       h("div", { class: "lbl", text: "Total geral" }),
       h("div", { class: "big" }, h("small", { text: "R$" }), " " + partes),
-      S.config.teto && temTeto() ? barra : null, info);
+      ...(temTeto() ? [barra] : []), info);
     // filtros
     const pend = S.items.filter((i) => i.status !== "comprado").length;
     const cs = comodosComItens();
