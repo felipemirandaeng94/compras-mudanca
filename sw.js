@@ -1,5 +1,5 @@
 // Service worker: app shell em cache, stale-while-revalidate para arquivos do próprio site.
-const VERSAO = "v3";
+const VERSAO = "v4";
 const CACHE = `mudanca-${VERSAO}`;
 const SHELL = ["./", "index.html", "styles.css", "app.js", "db.js", "ui.js", "util.js", "config.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/maskable-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"];
